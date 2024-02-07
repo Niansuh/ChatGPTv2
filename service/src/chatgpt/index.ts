@@ -15,12 +15,12 @@ const { HttpsProxyAgent } = httpsProxyAgent
 dotenv.config()
 
 const ErrorCodeMessage: Record<string, string> = {
-  401: '[OpenAI] 提供错误的API密钥 | Incorrect API key provided',
-  403: '[OpenAI] 服务器拒绝访问，请稍后再试 | Server refused to access, please try again later',
-  502: '[OpenAI] 错误的网关 |  Bad Gateway',
-  503: '[OpenAI] 服务器繁忙，请稍后再试 | Server is busy, please try again later',
-  504: '[OpenAI] 网关超时 | Gateway Time-out',
-  500: '[OpenAI] 服务器繁忙，请稍后再试 | Internal Server Error',
+  401: '[OpenAI] Incorrect API key provided',
+  403: '[OpenAI] Server refused to access, please try again later',
+  502: '[OpenAI] Bad Gateway',
+  503: '[OpenAI] Server is busy, please try again later',
+  504: '[OpenAI] Gateway Time-out',
+  500: '[OpenAI] Internal Server Error',
 }
 
 const timeoutMs: number = !isNaN(+process.env.TIMEOUT_MS) ? +process.env.TIMEOUT_MS : 100 * 1000
@@ -158,7 +158,7 @@ async function fetchUsage() {
     // 获取已使用量
     const useResponse = await options.fetch(urlUsage, { headers })
     if (!useResponse.ok)
-      throw new Error('获取使用量失败')
+      throw new Error('Failed to get usage')
     const usageData = await useResponse.json() as UsageResponse
     const usage = Math.round(usageData.total_usage) / 100
     return Promise.resolve(usage ? `$${usage}` : '-')
