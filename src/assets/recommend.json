@@ -1,14 +1,14 @@
 [
   {
-    "key": "awesome-chatgpt-prompts-zh",
-    "desc": "ChatGPT 中文调教指南",
-    "downloadUrl": "https://raw.githubusercontent.com/PlexPt/awesome-chatgpt-prompts-zh/main/prompts-zh.json",
-    "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"
+    "key": "Awesome-ChatGPT-Prompts-EN",
+    "desc": "Awesome-ChatGPT-Prompts-EN | (Niansuh AI)",
+    "downloadUrl": "https://raw.githubusercontent.com/Niansuh/prompt/main/en.json",
+    "url": "https://github.com/Niansuh/prompt/blob/main/en.json"
   },
   {
-    "key": "awesome-chatgpt-prompts-zh-TW",
-    "desc": "ChatGPT 中文調教指南 (透過 OpenAI / OpenCC 協助，從簡體中文轉換為繁體中文的版本)",
-    "downloadUrl": "https://raw.githubusercontent.com/PlexPt/awesome-chatgpt-prompts-zh/main/prompts-zh-TW.json",
+    "key": "Awesome-ChatGPT-Prompts-VI",
+    "desc": "Awesome-ChatGPT-Prompts-VI | (Niansuh AI)",
+    "downloadUrl": "https://raw.githubusercontent.com/Niansuh/prompt/main/vi.json",
     "url": "https://github.com/PlexPt/awesome-chatgpt-prompts-zh"
   }
 ]
