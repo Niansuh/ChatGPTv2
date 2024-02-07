@@ -73,7 +73,7 @@ router.post('/verify', async (req, res) => {
       throw new Error('Secret key is empty')
 
     if (process.env.AUTH_SECRET_KEY !== token)
-      throw new Error('密钥无效 | Secret key is invalid')
+      throw new Error('Secret key is invalid')
 
     res.send({ status: 'Success', message: 'Verify successfully', data: null })
   }
